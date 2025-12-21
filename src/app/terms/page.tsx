@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -14,10 +15,12 @@ export default function TermsPage() {
       <Header />
       <main className="pt-20 sm:pt-24">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-white to-purple-50 py-12 sm:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center animate-fade-in-up">
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+        <section className="relative py-16 sm:py-20 overflow-hidden bg-gray-50">
+          <div className="absolute inset-0 hero-mesh" />
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <span className="badge badge-primary mb-4">Legal</span>
+              <h1 className="heading-lg text-4xl sm:text-5xl text-gray-900">
                 Terms &amp; Conditions
               </h1>
               <p className="mt-4 text-gray-600">
@@ -28,15 +31,15 @@ export default function TermsPage() {
         </section>
 
         {/* Content Section */}
-        <section className="py-12 sm:py-16">
+        <section className="py-12 sm:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <article className="prose prose-gray max-w-none legal-content">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Welcome to AM4M! These Terms and Conditions of Use (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;you,&quot; &quot;your,&quot; or &quot;user&quot;) and Accept Me 4 Me, Inc., an Illinois limited liability company (&quot;AM4M,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), governing your access to and use of the AM4M mobile application, websites, and any related services, products, or content (collectively, the &quot;Service&quot;).
               </p>
               
-              <div className="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
-                <p className="text-gray-700 font-medium">
+              <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-5 my-6">
+                <p className="text-gray-700 font-medium m-0">
                   By accessing, registering for, or using the Service, you signify that you have read, understood, and agree to be bound by these Terms, as well as our Privacy Policy, Community Guidelines, and any other policies or guidelines referenced herein or made available to you through the Service. If you do not agree to these Terms, you must not access or use the Service.
                 </p>
               </div>
@@ -90,7 +93,7 @@ export default function TermsPage() {
 
               <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Your Privacy</h2>
               <p className="text-gray-600">
-                Your privacy is critically important to us. Our Privacy Policy (accessible within the app and on our website) details how we collect, use, store, share, and protect your personal data, including sensitive information you provide for profiling and matching purposes. By using the Service, you consent to the collection and use of your information as described in our Privacy Policy. Please review it carefully.
+                Your privacy is critically important to us. Our <Link href="/privacy" className="text-primary hover:underline font-medium">Privacy Policy</Link> (accessible within the app and on our website) details how we collect, use, store, share, and protect your personal data, including sensitive information you provide for profiling and matching purposes. By using the Service, you consent to the collection and use of your information as described in our Privacy Policy. Please review it carefully.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Subscriptions &amp; Payments</h2>
@@ -156,14 +159,24 @@ export default function TermsPage() {
 
               <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">14. Contact Us</h2>
               <p className="text-gray-600">For any notices or legal inquiries, please contact us in writing at:</p>
-              <p className="text-gray-700 font-medium mt-2">
+              <p className="text-gray-900 font-medium mt-2">
                 Accept Me 4 Me, Inc. – <a href="mailto:contact@acceptme4me.com" className="text-primary hover:underline">contact@acceptme4me.com</a>
               </p>
 
-              <div className="bg-gray-100 rounded-xl p-6 mt-10">
-                <p className="text-gray-700 font-medium text-center">
+              <div className="bg-gray-50 rounded-2xl p-6 mt-10 border border-gray-100">
+                <p className="text-gray-700 font-medium text-center m-0">
                   By using AM4M, you acknowledge that you have read, understood, and agree to these Terms and Conditions.
                 </p>
+              </div>
+
+              {/* Back link */}
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-medium transition-colors">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Home
+                </Link>
               </div>
             </article>
           </div>
@@ -173,4 +186,3 @@ export default function TermsPage() {
     </>
   );
 }
-

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -14,10 +15,12 @@ export default function PrivacyPage() {
       <Header />
       <main className="pt-20 sm:pt-24">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/5 via-white to-purple-50 py-12 sm:py-16">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center animate-fade-in-up">
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
+        <section className="relative py-16 sm:py-20 overflow-hidden bg-gray-50">
+          <div className="absolute inset-0 hero-mesh" />
+          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <span className="badge badge-primary mb-4">Legal</span>
+              <h1 className="heading-lg text-4xl sm:text-5xl text-gray-900">
                 Privacy Policy
               </h1>
               <p className="mt-4 text-gray-600">
@@ -28,7 +31,7 @@ export default function PrivacyPage() {
         </section>
 
         {/* Content Section */}
-        <section className="py-12 sm:py-16">
+        <section className="py-12 sm:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <article className="prose prose-gray max-w-none legal-content">
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -100,7 +103,7 @@ export default function PrivacyPage() {
                 <li><strong>Data Portability:</strong> In some jurisdictions, you may have the right to receive your personal data in a structured, commonly used, and machine-readable format.</li>
               </ul>
               <p className="text-gray-600 mt-4">
-                To exercise these rights, please contact us at <a href="mailto:contact@acceptme4me.com" className="text-primary hover:underline">contact@acceptme4me.com</a>. We will respond to your request in accordance with applicable laws.
+                To exercise these rights, please contact us at <a href="mailto:contact@acceptme4me.com" className="text-primary hover:underline font-medium">contact@acceptme4me.com</a>. We will respond to your request in accordance with applicable laws.
               </p>
 
               <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Data Security</h2>
@@ -132,9 +135,19 @@ export default function PrivacyPage() {
               <p className="text-gray-600">
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us at:
               </p>
-              <p className="text-gray-700 font-medium mt-2">
+              <p className="text-gray-900 font-medium mt-2">
                 Accept Me 4 Me, Inc. – <a href="mailto:contact@acceptme4me.com" className="text-primary hover:underline">contact@acceptme4me.com</a>
               </p>
+
+              {/* Back link */}
+              <div className="mt-12 pt-8 border-t border-gray-200">
+                <Link href="/" className="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-medium transition-colors">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Home
+                </Link>
+              </div>
             </article>
           </div>
         </section>
@@ -143,4 +156,3 @@ export default function PrivacyPage() {
     </>
   );
 }
-
