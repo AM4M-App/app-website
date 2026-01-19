@@ -100,7 +100,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 sm:py-32 bg-gray-50 relative overflow-hidden">
+    <section id="stories" className="py-24 sm:py-32 bg-gray-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2" />
@@ -114,8 +114,8 @@ export default function TestimonialsSection() {
             <span className="gradient-text-warm">real love</span>
           </h2>
           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
-            Discover how AM4M has helped thousands find meaningful connections 
-            and lasting relationships built on authenticity.
+            Discover how AM4M helps people find meaningful connections and 
+            lasting relationships built on authenticity.
           </p>
         </div>
 
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 p-6 sm:p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
             <div className="text-left">
               <p className="text-gray-900 font-bold text-lg">Ready to find your person?</p>
-              <p className="text-gray-500 text-sm">Join thousands who found love on AM4M</p>
+              <p className="text-gray-500 text-sm">Join people who found love on AM4M</p>
             </div>
             <a
               href="#download"

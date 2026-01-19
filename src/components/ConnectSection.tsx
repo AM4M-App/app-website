@@ -52,7 +52,7 @@ export default function ConnectSection() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold text-sm">Maria, 28</p>
+                        <p className="font-semibold text-sm">Maria</p>
                         <p className="text-white/60 text-xs">Chicago, IL</p>
                       </div>
                     </footer>
@@ -61,19 +61,7 @@ export default function ConnectSection() {
               </div>
 
               {/* Floating stats cards */}
-              <div className="absolute -right-4 sm:-right-8 top-8 bg-white rounded-2xl p-4 shadow-xl animate-float hidden sm:block">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-gray-900">2,847</p>
-                    <p className="text-xs text-gray-500">Matches this week</p>
-                  </div>
-                </div>
-              </div>
+             
 
               <div className="absolute -left-4 sm:-left-8 bottom-32 bg-white rounded-2xl p-4 shadow-xl animate-float hidden sm:block" style={{ animationDelay: '-3s' }}>
                 <div className="flex items-center gap-3">
@@ -91,7 +79,7 @@ export default function ConnectSection() {
                     ))}
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">+247 new today</p>
+                    <p className="text-sm font-semibold text-gray-900">New today</p>
                     <p className="text-xs text-gray-500">Join them!</p>
                   </div>
                 </div>

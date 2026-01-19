@@ -118,26 +118,6 @@ export default function FeaturesSection() {
           ))}
         </div>
 
-        {/* Stats Row */}
-        <div className="mt-20 pt-16 border-t border-gray-100">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
-            {[
-              { value: "10K+", label: "Active Members", accent: "text-primary" },
-              { value: "89%", label: "Match Success Rate", accent: "text-emerald-600" },
-              { value: "50K+", label: "Connections Made", accent: "text-amber-600" },
-              { value: "4.9", label: "App Store Rating", accent: "text-rose-600" },
-            ].map((stat, index) => (
-              <div key={stat.label} className={`stagger-${index + 1}`}>
-                <p className={`stat-number text-4xl sm:text-5xl lg:text-6xl ${stat.accent}`}>
-                  {stat.value}
-                </p>
-                <p className="mt-2 text-sm text-gray-500 font-medium">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
