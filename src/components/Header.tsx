@@ -22,35 +22,21 @@ export default function Header() {
                 priority
               />
             </div>
-            <span className="hidden sm:block font-bold text-xl text-gray-900 tracking-tight">
-              AM4M
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {[
-              { label: "Features", href: "#features" },
-              { label: "Stories", href: "#stories" },
+              { label: "Features", href: "/#features" },
               { label: "About", href: "/about" },
             ].map((item) => (
-              item.href.startsWith('/') ? (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/80 transition-all duration-200"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/80 transition-all duration-200"
-                >
-                  {item.label}
-                </a>
-              )
+              <Link
+                key={item.label}
+                href={item.href}
+                className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100/80 transition-all duration-200"
+              >
+                {item.label}
+              </Link>
             ))}
           </nav>
 
