@@ -66,7 +66,7 @@ export default function ConnectSection() {
               <div className="absolute -left-4 sm:-left-8 bottom-32 bg-white rounded-2xl p-4 shadow-xl animate-float hidden sm:block" style={{ animationDelay: '-3s' }}>
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-2">
-                    {[9, 10, 11].map((num) => (
+                    {['9', 'new-3', 'new-1'].map((num) => (
                       <div key={num} className="w-8 h-8 rounded-full overflow-hidden border-2 border-white">
                         <Image
                           src={`/images/${num}.jpg`}

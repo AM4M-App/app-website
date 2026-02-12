@@ -55,14 +55,14 @@ export default function Hero() {
               {/* User avatars */}
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">
-                  {[2, 3, 4, 5].map((num, i) => (
+                  {['2', '3', '4', 'new-1'].map((num, i) => (
                     <div 
                       key={num} 
                       className="w-11 h-11 rounded-full border-[3px] border-white overflow-hidden shadow-lg ring-1 ring-gray-100"
                       style={{ zIndex: 4 - i }}
                     >
                       <Image
-                        src={`/images/${num}.jpg`}
+                        src={`/images/${num}${num.startsWith('new') ? '' : ''}.jpg`}
                         alt="User"
                         width={44}
                         height={44}

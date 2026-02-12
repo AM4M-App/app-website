@@ -14,11 +14,14 @@ function TestimonialCard({ image, names, quote, author, location, index }: Testi
     "from-primary to-purple-600",
     "from-rose-500 to-pink-600", 
     "from-amber-500 to-orange-600",
+    "from-teal-500 to-cyan-600",
+    "from-indigo-500 to-blue-600",
+    "from-fuchsia-500 to-pink-600",
   ];
   
   return (
     <article 
-      className={`group card-hover relative bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 stagger-${index + 1}`}
+      className={`group card-hover relative bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-100 stagger-${(index % 3) + 1}`}
     >
       {/* Image container */}
       <div className="relative aspect-[4/5] overflow-hidden img-zoom">
@@ -84,6 +87,13 @@ export default function TestimonialsSection() {
       location: "New York, NY",
     },
     {
+      image: "/images/new-1.jpg",
+      names: "Marcus & Lena",
+      quote: "We met on AM4M and instantly clicked. Now we're living our best life together, traveling and making memories every day.",
+      author: "Marcus, 29",
+      location: "San Diego, CA",
+    },
+    {
       image: "/images/10.jpg",
       names: "Andres & Tara",
       quote: "Finding real connection in this ultra-connected world isn't easy, but AM4M made it happen for us! We bonded over our shared values.",
@@ -91,11 +101,25 @@ export default function TestimonialsSection() {
       location: "Miami, FL",
     },
     {
+      image: "/images/new-2.jpg",
+      names: "Alex, Jordan & Sam",
+      quote: "AM4M embraces all kinds of love. We found our perfect match in each other and couldn't be happier with our journey together.",
+      author: "Jordan, 31",
+      location: "Austin, TX",
+    },
+    {
       image: "/images/12.jpg",
       names: "Maria & Drew",
       quote: "The community is so welcoming. I love connecting with others who value authenticity just like I do. We're now planning our wedding!",
       author: "Drew, 21",
       location: "Los Angeles, CA",
+    },
+    {
+      image: "/images/new-3.jpg",
+      names: "David & Nicole",
+      quote: "What started as a simple match turned into the love of a lifetime. AM4M brought us together when we needed each other most.",
+      author: "Nicole, 34",
+      location: "Atlanta, GA",
     },
   ];
 
