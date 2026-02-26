@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
       location: "New York, NY",
     },
     {
-      image: "/images/new-1.jpg",
+      image: "/images/new-3.jpg",
       names: "Marcus & Lena",
       quote: "We met on AM4M and instantly clicked. Now we're living our best life together, traveling and making memories every day.",
       author: "Marcus, 29",
