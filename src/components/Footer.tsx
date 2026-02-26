@@ -87,12 +87,14 @@ export default function Footer() {
               <Link href="/" className="inline-flex items-center gap-3 group">
                 <Image
                   src="/logo/AM4M-no-text-PNG.png"
-                  alt="AM4M Logo"
+                  alt="AM4M ACCEPT ME 4 ME"
                   width={48}
                   height={48}
                   className="h-12 w-auto object-contain"
                 />
-                <span className="font-bold text-xl text-white">AM4M</span>
+                <div className="flex flex-col leading-tight">
+                  <span className="text-xs font-semibold text-white/60 tracking-wide uppercase">Accept Me 4 Me</span>
+                </div>
               </Link>
               <p className="mt-4 text-white/50 text-sm leading-relaxed max-w-xs">
                 Accept Me 4 Me. A dating app where authenticity is celebrated 

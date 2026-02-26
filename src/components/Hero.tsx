@@ -20,8 +20,15 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Text Content */}
           <div className="order-2 lg:order-1">
-            {/* Badge */}
+            {/* Brand Header */}
             <div className="animate-fade-in-up">
+              <h2 className="heading-xl text-2xl sm:text-3xl lg:text-4xl tracking-tight">
+                <span className="gradient-text">ACCEPT ME 4 ME</span>
+              </h2>
+            </div>
+
+            {/* Badge */}
+            <div className="mt-4 animate-fade-in-up stagger-1">
               <span className="badge badge-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                 Now Available on iOS & Android
@@ -29,7 +36,7 @@ export default function Hero() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="mt-6 animate-fade-in-up stagger-1">
+            <h1 className="mt-6 animate-fade-in-up stagger-2">
               <span className="block heading-xl text-5xl sm:text-6xl lg:text-7xl text-gray-900">
                 Find Love &
               </span>
@@ -39,19 +46,19 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-lg leading-relaxed animate-fade-in-up stagger-2">
+            <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-lg leading-relaxed animate-fade-in-up stagger-3">
               Connect with others who appreciate you for who you are. 
               Be <span className="font-semibold text-gray-900">unapologetically yourself</span> and 
               find your person in a community that celebrates authenticity.
             </p>
 
             {/* CTA Buttons */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-3">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 animate-fade-in-up stagger-4">
               <AppStoreButtons size="large" variant="dark" />
             </div>
 
             {/* Social Proof */}
-            <div className="mt-12 flex flex-wrap items-center gap-8 animate-fade-in-up stagger-4">
+            <div className="mt-12 flex flex-wrap items-center gap-8 animate-fade-in-up stagger-5">
               {/* User avatars */}
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-3">

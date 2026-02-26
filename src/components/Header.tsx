@@ -11,16 +11,19 @@ export default function Header() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <Image
                 src="/logo/AM4M-no-text-PNG.png"
-                alt="AM4M"
+                alt="AM4M ACCEPT ME 4 ME"
                 width={44}
                 height={44}
                 className="h-10 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                 priority
               />
+            </div>
+            <div className="flex flex-col leading-tight">
+              <span className="text-[10px] sm:text-xs font-semibold text-gray-500 tracking-wide uppercase">Accept Me 4 Me</span>
             </div>
           </Link>
 
