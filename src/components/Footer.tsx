@@ -86,11 +86,11 @@ export default function Footer() {
             <div className="col-span-2">
               <Link href="/" className="inline-flex items-center gap-3 group">
                 <Image
-                  src="/logo/AM4M-no-text-PNG.png"
+                  src="/logo/AM4M-with-text-Gray-and-white-PNG.png"
                   alt="AM4M ACCEPT ME 4 ME"
-                  width={48}
+                  width={180}
                   height={48}
-                  className="h-12 w-auto object-contain"
+                  className="h-12 w-auto object-contain brightness-0 invert"
                 />
                 <div className="flex flex-col leading-tight">
                   <span className="text-xs font-semibold text-white/60 tracking-wide uppercase">Accept Me 4 Me</span>
