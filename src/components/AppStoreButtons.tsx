@@ -1,3 +1,7 @@
+const APP_BUNDLE_ID = "com.acceptme4me.am4mapp";
+const APP_STORE_URL = "https://apps.apple.com/app/id6450518244";
+const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${APP_BUNDLE_ID}`;
+
 interface AppStoreButtonsProps {
   size?: "small" | "medium" | "large";
   variant?: "light" | "dark" | "primary";
@@ -29,7 +33,9 @@ export default function AppStoreButtons({
     <div className={`flex items-center gap-3 ${className}`}>
       {/* App Store Button */}
       <a
-        href="#"
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`btn-primary flex items-center rounded-xl transition-all duration-300 border ${sizeClasses[size]} ${variantClasses[variant]}`}
         aria-label="Download on the App Store"
       >
@@ -44,7 +50,9 @@ export default function AppStoreButtons({
 
       {/* Google Play Button */}
       <a
-        href="#"
+        href={PLAY_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`btn-primary flex items-center rounded-xl transition-all duration-300 border ${sizeClasses[size]} ${variantClasses[variant]}`}
         aria-label="Get it on Google Play"
       >
